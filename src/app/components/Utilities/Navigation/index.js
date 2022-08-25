@@ -12,7 +12,7 @@ function Navigation() {
     setMenu((o) => !o);
   };
   return (
-    <nav className="flex items-center gap-5 p-2">
+    <nav className="container mx-auto flex items-center gap-5 p-2">
       <Link to="/" className="text-red-500 flex items-center gap-2">
         <div className="w-8">
           <img
