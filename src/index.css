@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600;700;800;900&display=swap') format('text/css');
+
+  }
+
+  html{
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+
+  /* Slider Arrow Custom styling */
+  .slick-next,.slick-prev{
+    border-radius: 100%;
+    color: #374151;
+    background-color: #fff;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    transition: all .2s ease-out;
+    box-shadow:0 0 7px 1px #0000002d;
+    z-index: 99;
+  }
+  .slick-next:hover,.slick-prev:hover{
+    background-color:#fecaca;
+    color: #ef4444;
+   
+  }
